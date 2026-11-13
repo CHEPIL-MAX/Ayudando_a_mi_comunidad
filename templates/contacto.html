@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+<main>
+    <div class="form-container">
+        <h2>Escríbenos tu Consulta</h2>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Consulta o Pregunta:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿Tienes dudas sobre los ecoleños o cómo solicitarlos? Escríbenos aquí..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Consulta</button>
+        </form>
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoleños Totatiche - {% block title %}Inicio{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Ecoleños Totatiche</h1>
+        <p class="slogan">Transformando residuos de cartón y papel en energía limpia local</p>
+    </header>
+
+    <nav>
+        <a href="{{ url_for('index') }}" class="active">Inicio</a>
+        <a href="{{ url_for('contenido') }}">Proyecto</a>
+        <a href="{{ url_for('registro') }}">Donar Cartón</a>
+        <a href="{{ url_for('intereses') }}">Beneficios</a>
+        <a href="{{ url_for('contacto') }}">Contacto</a>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        <p>&copy; 2026 Ecoleños Totatiche - Iniciativa Ecológica Comunitaria</p>
+    </footer>
+</body>
+</html>

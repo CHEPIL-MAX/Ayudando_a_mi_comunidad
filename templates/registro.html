@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Registro{% endblock %}
+
+{% block content %}
+<main>
+    <div class="form-container">
+        <h2>Registro para Donación de Cartón o Papel</h2>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre de la Tienda o Vecino:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Abarrotes San Miguel" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo o Teléfono de Contacto:</label>
+                <input type="text" id="email" name="email" placeholder="Contacto directo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="material">Material a aportar:</label>
+                <select id="material" name="material">
+                    <option value="carton">Cartón de embalaje / cajas</option>
+                    <option value="papel">Cuadernos / Libros / Impresiones</option>
+                    <option value="ambos">Cartón y Papel</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">Registrar Recolección</button>
+        </form>
+    </div>
+</main>
+{% endblock %}

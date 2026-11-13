@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Beneficios{% endblock %}
+
+{% block content %}
+<main>
+    <h2>Beneficios para Totatiche</h2>
+
+    <ol class="lista-intereses">
+        <li><strong>Reducción de Plagas:</strong> Al retirar el cartón de los comercios, disminuimos los refugios de roedores e insectos.</li>
+        <li><strong>Aprovechamiento de Papel:</strong> Reutilizamos libretas, impresiones y hojas de desecho escolar o del hogar.</li>
+        <li><strong>Cuidado del Medio Ambiente:</strong> Fomentamos el uso en espacios abiertos para proteger la calidad del aire local y la capa de ozono.</li>
+        <li><strong>Economía Circular:</strong> Brindamos un insumo útil para iniciadores de fuego y horneado artesanal a partir de basura reciclada.</li>
+            <img src="{{ url_for('static', filename='img/totatiche.jpg') }}"
+    </ol>
+</main>
+{% endblock %}

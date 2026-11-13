@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<main>
+
+    <section class="intro-section">
+        <h2>Unidos por un Totatiche más Limpio</h2>
+        <p>
+            Aprovechamos el cartón sobrante de las tiendas locales y el papel usado
+            para crear ecoleños, reduciendo plagas y generando una alternativa de calor limpia.
+        </p>
+    </section>
+
+    <div class="eventos-grid">
+
+        <article class="evento-card" id="evento-carton">
+            <img src="{{ url_for('static', filename='img/recoleccion_carton.jpg') }}"
+                 alt="Recolección de Cartón"
+                 class="evento-img">
+
+            <div class="evento-info">
+                <span class="evento-fecha">Paso 1</span>
+                <h3>Recolección Comercial</h3>
+
+                <p class="evento-desc">
+                    Recogemos el cartón acumulado en tiendas locales para evitar la
+                    generación de plagas de roedores en los comercios.
+                </p>
+            </div>
+        </article>
+
+        <article class="evento-card" id="evento-elaboracion">
+            <img src="{{ url_for('static', filename='img/ecolenos_elaboracion.jpg') }}"
+                 alt="Elaboración de Ecoleños"
+                 class="evento-img">
+
+            <div class="evento-info">
+                <span class="evento-fecha">Paso 2</span>
+                <h3>Proceso Ecológico</h3>
+
+                <p class="evento-desc">
+                    Mezclamos cartón y hojas de papel sobrantes (sin químicos dañinos)
+                    para compactar leños ecológicos de alto rinde.
+                </p>
+            </div>
+        </article>
+
+        <article class="evento-card" id="evento-seguridad">
+            <img src="{{ url_for('static', filename='img/uso_seguro.jpg') }}"
+                 alt="Uso Responsable"
+                 class="evento-img">
+
+            <div class="evento-info">
+                <span class="evento-fecha">Paso 3</span>
+                <h3>Uso Responsable</h3>
+
+                <p class="evento-desc">
+                    Diseñados para hornear e iniciar fuegos en espacios abiertos y
+                    ventilados, reduciendo el impacto en la capa de ozono.
+                </p>
+            </div>
+        </article>
+
+    </div>
+
+</main>
+{% endblock %}
